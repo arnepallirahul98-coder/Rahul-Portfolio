@@ -1,0 +1,46 @@
+/* ============================================================
+   Global Styles — Portfolio
+   ============================================================
+   Tailwind CSS v4 uses @import for its base layers.
+   Custom design tokens (accent color, font, spacing) are
+   defined via @theme so they integrate with Tailwind utilities.
+   ============================================================ */
+
+@import "tailwindcss";
+
+/* ----- Design Tokens ----- */
+@theme {
+  --color-accent: #718096;        /* Muted blue-gray — placeholder accent */
+  --color-accent-light: #a0aec0;  /* Lighter variant for hover states */
+  --color-accent-dark: #4a5568;   /* Darker variant for emphasis */
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* ----- Base Resets ----- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar but keep scroll functionality (for cleaner look) */
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* ----- Selection Highlight ----- */
+::selection {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* ----- Utility: smooth transition on all properties ----- */
+.transition-smooth {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
