@@ -9,6 +9,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
+    host: true,
     watch: {
       ignored: ['**/3d MODELING/**', '**/DRAWINGS/**', '**/SHEET METAL/**'],
     },
