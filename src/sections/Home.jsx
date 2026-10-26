@@ -156,7 +156,7 @@ function Home() {
             Mobile: Appears in center alone during scroll stage 2
         */}
         <motion.div
-          className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 shrink-0 z-20"
+          className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 shrink-0 z-20"
           style={{
             opacity: imageOpacity,
             x: circleTranslateX,
